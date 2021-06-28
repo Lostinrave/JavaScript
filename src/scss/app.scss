@@ -1,0 +1,337 @@
+@import "~bootstrap/scss/bootstrap";
+/* MDB SCSS */
+@import "~mdb-ui-kit/css/mdb.min.css";
+// Slick Slider
+
+$slick-font-path: "~slick-carousel/slick/fonts/";
+$slick-loader-path: "~slick-carousel/slick/";
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
+
+$la-font-path: "~line-awesome/dist/line-awesome/fonts/";
+@import "~line-awesome/dist/line-awesome/scss/line-awesome.scss";
+
+@import "./sections/bit-slider";
+
+.animated-card {
+  .card-body {
+    padding-bottom: 40px;
+  }
+}
+/* Animation example start */
+.animated-arrow {
+  background-color: #d2a98e;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Absolutaus elemento centravimas parent elemente */
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -30px;
+  transition: all 3000ms linear;
+  &:hover {
+    cursor: pointer;
+    background-color: red;
+    color: black;
+    transform: scale(2);
+  }
+  i {
+    color: white;
+    font-size: 26px;
+  }
+}
+/* Animation example end */
+
+body {
+  line-height: 1.74;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  visibility: visible;
+  font-family: "Roboto", sans-serif;
+  color: #222;
+  position: relative;
+  background-color: #ffffff;
+}
+a {
+  color: #333333;
+}
+
+.infotechno-bg {
+  background: #f4efe9 none repeat scroll 0% 0%;
+}
+/* Main Left collumn CSS start */
+.infotechno-hero-text {
+  max-width: 605px;
+  float: right;
+  width: 100%;
+  padding-left: 30px;
+  h6 {
+    color: #086ad8;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+}
+.font-weight--reguler {
+  font-weight: 900;
+  font-size: 56px;
+}
+.btn-main {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  padding: 15px 35px;
+}
+/* Main Left collumn CSS end */
+
+/* Main right collumn CSS start */
+
+.infotechno-hero-inner-images {
+  margin-top: 20px;
+}
+.infotechno-inner-one {
+  position: absolute;
+  top: 10px;
+}
+.infotechno-inner-two {
+  z-index: 1;
+  position: relative;
+}
+
+/* Main right collumn CSS end */
+
+/* Slick slide CSS start */
+.slick-relative {
+  position: relative;
+}
+// .slick-slide {
+//   height: 150px;
+// }
+.slider-wrapper {
+  display: block;
+  height: 150px;
+}
+.slider-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-img-hover {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  opacity: 0;
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+  transition-timing-function: linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slick-relative:hover .slider-img-hover {
+  opacity: 1;
+}
+/* Slick slide CSS end */
+
+/* Features wrapper CSS start */
+
+.section-title-wrap, .projects-wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.section-sub-title {
+  color: #ababab;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 1.43;
+  margin-top: -5px;
+}
+.heading {
+  font-size: 46px;
+  font-weight: 900;
+}
+
+/* Features wrapper CSS end */
+
+/* Features cards CSS start */
+.features-cards {
+  margin: 60px 50px 30px 63px;
+}
+.card-wrapper {
+  position: relative;
+}
+.card-text {
+  color: #696969;
+}
+.btn-primary{
+  border: none;
+}
+.btn-features {
+  background: #d2a98e;
+  position: absolute;
+  bottom: -20px;
+  border-radius: 50%;
+}
+.button-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .fa-arrow-right {
+    font-size: 25px;
+    width: 20px;
+    height: 30px;
+  }
+}
+
+.under-heading {
+  margin-top: 60px;
+  padding-top: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #333333;
+}
+/* Features cards CSS end */
+
+/* Section experience CSS start */
+
+.section-experience {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.infotechno-section-bg-01 {
+  background: url(https://demo.hasthemes.com/mitech-preview/assets/images/patterns/mitech-home-infotechno-section-company-bg.png)
+      top 140px left no-repeat,
+    -webkit-linear-gradient(top, #fff 0, #f5f5f5 100%);
+}
+
+.list-item {
+  position: relative;
+  padding: 0;
+  margin-bottom: 62px;
+  &:hover link {
+    color: #086ad8;
+  }
+  .list-header {
+    display: flex;
+  }
+  .marker {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-right: 10px;
+    min-width: 45px;
+    color: #ababab;
+  }
+}
+
+.title-wrap {
+  overflow: hidden;
+  .title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: 14px;
+    padding-top: 20px;
+    padding-right: 15px;
+    .fa-arrow-right {
+      font-size: 20px;
+    }
+  }
+}
+
+/* Section experience CSS end*/
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+.card {
+  margin: 20px 15px 35px;
+  transition: linear 800ms;
+  &:hover {
+    transform: translateY(-5px);
+    .box-projects-arrow {
+      display: none;
+    }
+
+    .box-projects-arrow-hover {
+      display: block;
+    }
+  }
+  &:hover .box-projects-arrow::before {
+    transform: translateY(0);
+  }
+  .card-body {
+    padding: 25px 26px 94px;
+    padding-bottom: 88px;
+  }
+  .box-projects-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 56px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    border-top: 1px solid #eee;
+    color: #0d6efd;
+  }
+  .box-projects-arrow-hover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 56px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    border-top: 1px solid #eee;
+    color: #eee;
+    background-color: #0d6efd;
+    display: none;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-direction: normal;
+  }
+}
+@keyframes example {
+  0% {
+    background-color: #0d6efd;
+    bottom: -50px;
+  }
+  100% {
+    background-color: #0d6efd;
+    bottom: 0px;
+  }
+}
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+  color: #333;
+  opacity: 1;
+  font-size: 6px;
+}
+.slick-dots li.slick-active button {
+  width: 10px;
+  height: 10px;
+  background-color: #0d6efd;
+  border-radius: 100%;
+}
+.slick-dots li.slick-active button:before {
+  color: transparent;
+}
