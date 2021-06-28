@@ -102,3 +102,8 @@ document.getElementById('popupLink').onclick = function() {
   }
 
 };
+$(document).ready(function(){
+  $("btn").mouseover(function(){
+    $("hero-button").animate({top: '10px'});
+  });
+});
