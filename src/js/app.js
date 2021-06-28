@@ -10,14 +10,14 @@ import $ from "jquery";
 
 import "slick-carousel";
 
-/* Slick JS*/
+/* Slick JS start*/
 
 $(document).ready(function () {
   $(".multiple-items").slick({
     dots: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 200,
     speed: 300,
     slidesToShow: 6,
     slidesToScroll: 3,
@@ -88,3 +88,17 @@ $(document).ready(function () {
     ],
   });
 });
+/* Slick JS end*/
+
+document.getElementById('popupLink').onclick = function() {
+
+  var popup = document.getElementById('toolbarPopup');
+  
+  //Funkcija contains grazina reiksme true arba false
+  if( popup.classList.contains('open') == false ) {
+    popup.classList.add('open');   
+  } else {
+    popup.classList.remove('open');
+  }
+
+};

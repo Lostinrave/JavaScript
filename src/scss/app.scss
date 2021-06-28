@@ -66,6 +66,67 @@ a {
 .infotechno-bg {
   background: #f4efe9 none repeat scroll 0% 0%;
 }
+
+/* Toolbar CSS start */
+
+.demo-option-container {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  background: #fff;
+  height: 100%;
+  width: 350px;
+  max-width: calc(100% - 45px);
+  z-index: 100000;
+  transition: all 0.5s;
+  .inner {
+    position: absolute;
+    top: 200px;
+    right: 100%;
+    display: block;
+    width: 40px;
+    border: 1px solid #eee;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+    background: #fff;
+    text-align: center;
+    box-shadow: -3px 0 10px -2px rgb(0 0 0 / 10%);
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+  }
+}
+
+.demo-option-container.open {
+  left: 83%;
+}
+.demo-option-wrapper {
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 55px;
+  .demo-panel-header {
+    padding: 40px 30px 30px;
+    text-align: center;
+    h6 {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #222;
+    }
+    .panel-btn {
+      margin-top: 20px;
+    }
+    .btn-buy-now {
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0em;
+      line-height: 40px;
+
+    }
+  }
+}
+
+/* Toolbar CSS end */
+
 /* Main Left collumn CSS start */
 .infotechno-hero-text {
   max-width: 605px;
@@ -145,7 +206,8 @@ a {
 
 /* Features wrapper CSS start */
 
-.section-title-wrap, .projects-wrapper {
+.section-title-wrap,
+.projects-wrapper {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -174,7 +236,7 @@ a {
 .card-text {
   color: #696969;
 }
-.btn-primary{
+.btn-primary {
   border: none;
 }
 .btn-features {
