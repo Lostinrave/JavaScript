@@ -90,20 +90,29 @@ $(document).ready(function () {
 });
 /* Slick JS end*/
 
-document.getElementById('popupLink').onclick = function() {
 
-  var popup = document.getElementById('toolbarPopup');
-  
+// Sidebar toolbar 
+
+document.getElementById("popupLink").onclick = function () {
+  var popup = document.getElementById("toolbarPopup");
+
   //Funkcija contains grazina reiksme true arba false
-  if( popup.classList.contains('open') == false ) {
-    popup.classList.add('open');   
+  if (popup.classList.contains("open") == false) {
+    popup.classList.add("open");
   } else {
-    popup.classList.remove('open');
+    popup.classList.remove("open");
   }
-
 };
-$(document).ready(function(){
-  $("btn").mouseover(function(){
-    $("hero-button").animate({top: '10px'});
+
+// JQuery mouseover animation try
+
+$(document).ready(function () {
+  $(".btn").mouseover(function () {
+    $(".hero-button").animate({ top: "-10px" });
   });
 });
+// Cookies working code
+document.getElementById("sutinku").onclick = function () {
+  var popup = document.getElementById("slapukai");
+  popup.classList.add("closed");
+};
