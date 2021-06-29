@@ -143,12 +143,22 @@ a {
   font-weight: 900;
   font-size: 56px;
 }
+
+/* Button hover Jquery CSS start*/
+.hero-button {
+  position: relative;
+}
 .btn-main {
+  position: absolute;
+  top: auto;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0em;
   padding: 15px 35px;
 }
+
+/* Button hover Jquery CSS end*/
+
 /* Main Left collumn CSS end */
 
 /* Main right collumn CSS start */
@@ -398,7 +408,7 @@ a {
   color: transparent;
 }
 
-
+/* Cookies popup CSS start */
 .slapukai-container {
   position: fixed;
   width: 100%;
@@ -421,7 +431,7 @@ a {
 .slapukai-container p {
   font-size: 0.9rem;
 }
-/* Slapukai CSS */
+
 .slapukai-container button.submit {
   position: absolute;
   top: 3.3rem;
@@ -449,3 +459,5 @@ a {
   content: "\25B3";
   margin-left: 5px;
 }
+/* Cookies popup CSS start */
+
