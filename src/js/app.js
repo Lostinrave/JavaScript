@@ -107,8 +107,10 @@ document.getElementById("popupLink").onclick = function () {
 // JQuery mouseover animation try
 
 $(document).ready(function () {
-  $(".btn").mouseover(function () {
-    $(".btn-main").animate({ top: "-10px" });
+  $(".btn-main").mouseover(function () {
+    $(this).animate({ top: -10}, 500 );
+  }).mouseout(function() {
+     $(this).animate({ top: 0}, 500 );
   });
 });
 // Cookies working code
