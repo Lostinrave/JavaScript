@@ -15,6 +15,15 @@
     <meta name="author" content="Plamen Nikolov, WeAreAthlon" />
   </head>
   <body>
+    <div class="loader-wrapper">
+      <div class="square-wrapper">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+    </div>
+
     <header>
       <!--Header top wrap start-->
       <div class="header-top-wrap border-bottom">
@@ -43,7 +52,9 @@
       <div id="toolbarPopup" class="demo-option-container">
         <div class="aeroland-toolbar">
           <div class="inner">
-            <a href="#" id="popupLink" data-toolbar="Quick options"><i class="las la-share-alt toolbar-icon"></i></a>
+            <a href="#" id="popupLink" data-toolbar="Quick options"
+              ><i class="las la-share-alt toolbar-icon"></i
+            ></a>
             <a href="#"><i class="las la-life-ring toolbar-icon"></i></a>
             <a href="#"><i class="las la-shopping-cart toolbar-icon"></i></a>
           </div>
@@ -59,8 +70,9 @@
                 Template
               </h6>
               <div class="panel-btn">
-                <a href="#" class="btn btn-primary btn-buy-now"><i class="las la-shopping-cart"></i> Buy Now </a>
-
+                <a href="#" class="btn btn-primary btn-buy-now"
+                  ><i class="las la-shopping-cart"></i> Buy Now
+                </a>
               </div>
             </div>
           </div>
@@ -120,7 +132,7 @@
         <!--Slider brand area start-->
 
         <div class="container">
-          <div class="multiple-items d-flex pt-5 pb-5 ps-5">
+          <div class="multiple-items d-flex">
             <div class="mw-100 slick-relative">
               <a href="#">
                 <div class="slider-wrapper" style="height: 150px">
@@ -714,13 +726,21 @@
             </div>
           </div>
         </div>
-        
-    <div id="slapukai" class="slapukai-container">
-      <h2>ŠIOJE SVETAINĖJE NAUDOJAMI SLAPUKAI</h2>
-      <p>Naudojame slapukus, kad galėtume suasmeninti turinį bei skelbimus, teikti visuomeninės medijos funkcijas ir analizuoti srautą. Be to, svetainės naudojimo informaciją bendriname su visuomeninės medijos, reklamavimo ir analizės partneriais, kurie gali ją pridėti prie kitos jūsų pateiktos arba naudojant paslaugas surinktos informacijos.</p>
-      <button class="submit" id="sutinku">Sutinku</button>
-      <a href="#" class="dropdown">Daugiau informacijos</a>
-    </div>
+
+        <div id="slapukai" class="slapukai-container">
+          <h2>ŠIOJE SVETAINĖJE NAUDOJAMI SLAPUKAI</h2>
+          <p>
+            Naudojame slapukus, kad galėtume suasmeninti turinį bei skelbimus,
+            teikti visuomeninės medijos funkcijas ir analizuoti srautą. Be to,
+            svetainės naudojimo informaciją bendriname su visuomeninės medijos,
+            reklamavimo ir analizės partneriais, kurie gali ją pridėti prie
+            kitos jūsų pateiktos arba naudojant paslaugas surinktos
+            informacijos.
+          </p>
+          <button class="submit" id="sutinku">Sutinku</button>
+          <a href="#" class="dropdown">Daugiau informacijos</a>
+        </div>
+
         <!--Whole site wrapper end-->
       </div>
     </div>
@@ -738,6 +758,7 @@
 
       gtag("config", "G-ZRQBM133GZ");
     </script>
+    <script src="/node_modules/animejs/lib/anime.min.js"></script>
     <!-- CSS animations -->
     <!-- <div class="row">
           <div class="col-4"> 

@@ -10,8 +10,23 @@ import $ from "jquery";
 
 import "slick-carousel";
 
+import anime from "animejs/lib/anime.es.js";
 /* Slick JS start*/
-
+$(window).on('load', function(){
+  $('.loader-wrapper').delay(2000).fadeOut(800);
+  anime({
+    targets: '.square',
+    translateX: 250,
+    direction: 'alternate',
+    loop: true,
+    duration: 2000,
+    easing: function(el, i, total) {
+      return function(t) {
+        return Math.pow(Math.sin(t * (i + 1)), total);
+      }
+    }
+  });
+});
 $(document).ready(function () {
   $(".multiple-items").slick({
     dots: true,
@@ -118,3 +133,5 @@ document.getElementById("sutinku").onclick = function () {
   var popup = document.getElementById("slapukai");
   popup.classList.add("closed");
 };
+
+

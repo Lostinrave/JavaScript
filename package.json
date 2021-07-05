@@ -82,6 +82,7 @@
   },
   "target": "web",
   "dependencies": {
+    "animejs": "^3.2.1",
     "bootstrap": "^5.0.1",
     "get-google-fonts": "^1.2.2",
     "jquery": "^3.6.0",
