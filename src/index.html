@@ -17,12 +17,36 @@
   <body>
     <div class="loader-wrapper">
       <div class="square-wrapper">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
+        <svg viewBox="0 0 248 248.667" class="hexagon">
+          <filter id="displacementFilter">
+            <feTurbulence
+              type="turbulence"
+              baseFrequency="0.05"
+              numOctaves="1"
+              result="turbulence"
+            />
+            <feDisplacementMap
+              in2="turbulence"
+              in="SourceGraphic"
+              scale="30"
+              xChannelSelector="R"
+              yChannelSelector="G"
+            />
+          </filter>
+          <polygon
+            style="filter: url(#displacementFilter); transform-origin: center"
+            points="64 68.64 8.574 100 63.446 67.68 64 4 64.554 67.68 119.426 100"
+            fill="#000000"
+          />
+        </svg>
       </div>
     </div>
+    <!-- <div class="square-wrapper">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div> -->
 
     <header>
       <!--Header top wrap start-->

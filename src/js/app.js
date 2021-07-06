@@ -11,22 +11,36 @@ import $ from "jquery";
 import "slick-carousel";
 
 import anime from "animejs/lib/anime.es.js";
-/* Slick JS start*/
+
 $(window).on('load', function(){
   $('.loader-wrapper').delay(2000).fadeOut(800);
   anime({
-    targets: '.square',
-    translateX: 250,
-    direction: 'alternate',
+    targets: ['.hexagon polygon', 'feTurbulence', 'feDisplacementMap'],
+    points: '64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96',
+    baseFrequency: 0,
+    scale: 1,
     loop: true,
-    duration: 2000,
-    easing: function(el, i, total) {
-      return function(t) {
-        return Math.pow(Math.sin(t * (i + 1)), total);
-      }
-    }
+    direction: 'alternate',
+    fill: '#09B009',
+    easing: 'easeInOutExpo',
+   
+
   });
+  // anime({
+  //   targets: '.square',
+  //   translateY: 250,
+  //   translateX: -250,
+  //   direction: 'alternate',
+  //   loop: true,
+  //   duration: 2000,
+  //   easing: function(el, i, total) {
+  //     return function(t) {
+  //       return Math.pow(Math.sin(t * (i + 1)), total);
+  //     }
+  //   }
+  // });
 });
+/* Slick JS start*/
 $(document).ready(function () {
   $(".multiple-items").slick({
     dots: true,
@@ -128,7 +142,7 @@ $(document).ready(function () {
      $(this).animate({ top: 0}, 500 );
   });
 });
-// Cookies working code
+// Cookies working popup code
 document.getElementById("sutinku").onclick = function () {
   var popup = document.getElementById("slapukai");
   popup.classList.add("closed");
