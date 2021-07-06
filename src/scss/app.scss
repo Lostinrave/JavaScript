@@ -13,6 +13,7 @@ $la-font-path: "~line-awesome/dist/line-awesome/fonts/";
 
 @import "./sections/bit-slider";
 
+/* On load animation css start */
 .loader-wrapper {
   width: 100%;
   height: 100%;
@@ -37,6 +38,7 @@ $la-font-path: "~line-awesome/dist/line-awesome/fonts/";
       margin: 0 auto;
      
     }
+    // animated squares
     // .square {
     //   margin: 5px;
     //   height: 25px;
@@ -45,7 +47,7 @@ $la-font-path: "~line-awesome/dist/line-awesome/fonts/";
     // }
   }
 }
-
+/* On load animation css end */
 .animated-card {
   .card-body {
     padding-bottom: 40px;
