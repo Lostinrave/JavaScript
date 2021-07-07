@@ -21,7 +21,7 @@ $(window).on('load', function(){
     scale: 1,
     loop: true,
     direction: 'alternate',
-    fill: '#09B009',
+    fill: '#086ad8',
     easing: 'easeInOutExpo',
    
 
