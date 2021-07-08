@@ -30,11 +30,10 @@ $la-font-path: "~line-awesome/dist/line-awesome/fonts/";
     position: fixed;
     top: 50%;
     left: 50%;
+    display: block;
     width: 200px;
     height: 200px;
-    display: block;
-    margin-top: -100px;
-    margin-left: -50px;
+    transform: translate(-50%, -50%);
 
     // animated squares
     // .square {
