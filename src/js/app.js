@@ -136,16 +136,18 @@ document.getElementById("popupLink").onclick = function () {
 // JQuery mouseover animation try
 
 $(document).ready(function () {
-  $(".btn-main").mouseover(function () {
+  $(".btn-main").on('click',function () {
     $(this).animate({ top: -10}, 500 );
-  }).mouseout(function() {
-     $(this).animate({ top: 0}, 500 );
+    return false;
   });
-});
+  // .mouseout(function() {
+  //    $(this).animate({ top: 0}, 500 );
+  // });
+
 // Cookies working popup code
-document.getElementById("sutinku").onclick = function () {
-  var popup = document.getElementById("slapukai");
-  popup.classList.add("closed");
-};
+$('#sutinku').on('click', function() {
+  $(this).parent().slideUp(500);
+});
 
 
+});
