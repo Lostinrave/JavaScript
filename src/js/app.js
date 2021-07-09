@@ -133,7 +133,7 @@ document.getElementById("popupLink").onclick = function () {
   }
 };
 
-// JQuery mouseover animation try
+// JQuery onclick animation / was mouseover mouseout
 
 $(document).ready(function () {
   $(".btn-main").on('click',function () {
