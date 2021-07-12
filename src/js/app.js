@@ -3,7 +3,8 @@ import "../scss/app.scss";
 /* Your JS Code goes here */
 
 /* MDB ui */
-import * as mdb from "mdb-ui-kit"; // lib
+import * as mdb from "mdb-ui-kit"; // libimport lightGallery from 'lightgallery';
+
 /* Demo JS */
 import "./demo.js";
 import $ from "jquery";
@@ -11,20 +12,20 @@ import $ from "jquery";
 import "slick-carousel";
 
 import anime from "animejs/lib/anime.es.js";
+// fancybox
+// import { Fancybox } from "@fancyapps/ui/src/Fancybox/Fancybox.js";
 
-$(window).on('load', function(){
-  $('.loader-wrapper').delay(2000).fadeOut(800);
+$(window).on("load", function () {
+  $(".loader-wrapper").delay(2000).fadeOut(800);
   anime({
-    targets: ['.hexagon polygon', 'feTurbulence', 'feDisplacementMap'],
-    points: '64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96',
+    targets: [".hexagon polygon", "feTurbulence", "feDisplacementMap"],
+    points: "64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96",
     baseFrequency: 0,
     scale: 1,
     loop: true,
-    direction: 'alternate',
-    fill: '#086ad8',
-    easing: 'easeInOutExpo',
-   
-
+    direction: "alternate",
+    fill: "#086ad8",
+    easing: "easeInOutExpo",
   });
   // anime({
   //   targets: '.square',
@@ -119,8 +120,7 @@ $(document).ready(function () {
 });
 /* Slick JS end*/
 
-
-// Sidebar toolbar 
+// Sidebar toolbar
 
 document.getElementById("popupLink").onclick = function () {
   var popup = document.getElementById("toolbarPopup");
@@ -136,18 +136,16 @@ document.getElementById("popupLink").onclick = function () {
 // JQuery onclick animation / was mouseover mouseout
 
 $(document).ready(function () {
-  $(".btn-main").on('click',function () {
-    $(this).animate({ top: -10}, 500 );
+  $(".btn-main").on("click", function () {
+    $(this).animate({ top: -10 }, 500);
     return false;
   });
   // .mouseout(function() {
   //    $(this).animate({ top: 0}, 500 );
   // });
 
-// Cookies working popup code
-$('#sutinku').on('click', function() {
-  $(this).parent().slideUp(500);
-});
-
-
+  // Cookies working popup code
+  $("#sutinku").on("click", function () {
+    $(this).parent().slideUp(500);
+  });
 });

@@ -13,6 +13,7 @@ $la-font-path: "~line-awesome/dist/line-awesome/fonts/";
 
 @import "./sections/bit-slider";
 
+// @import "fancyapps/ui/dist/fancybox.css";
 /* On load animation css start */
 .loader-wrapper {
   width: 100%;
@@ -37,7 +38,6 @@ $la-font-path: "~line-awesome/dist/line-awesome/fonts/";
     width: 200px;
     height: 200px;
     transform: translate(-25%, -25%);
-
 
     // animated squares
     // .square {
@@ -496,3 +496,208 @@ a {
   margin-left: 5px;
 }
 /* Cookies popup CSS start */
+
+/* Video wrapper CSS start */
+
+.infotechno-video-ptb {
+  padding: 150px 0;
+}
+.infotechno-video-bg {
+  background-image: url(https://demo.hasthemes.com/mitech-preview/assets/images/bg/home-infotechno-video-intro-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.vieeo-content-wrap .video-content-inner .heading {
+  line-height: 1.34;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 65px;
+}
+.viewo-text-wrap .single-popup-wrap.video-link {
+  display: inline-block;
+}
+.video-link {
+  transition: all 0.3s;
+}
+.single-popup-wrap {
+  position: relative;
+}
+.video-content {
+  display: flex;
+  align-items: center;
+  .ht-popup-video.video-button {
+    position: relative;
+    margin-right: 0;
+    display: inline-block;
+    height: 78px;
+    width: 78px;
+    .video-mark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      pointer-events: none;
+      .wave-pulse {
+        width: 1px;
+        height: 0;
+        margin: 0 auto;
+        &::before {
+          opacity: 0;
+          content: "";
+          display: block;
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          top: 50%;
+          left: 50%;
+          border-radius: 50%;
+          border: 3px solid #086ad8;
+          animation-delay: 0.75s;
+        }
+        &::after {
+          opacity: 0;
+          content: "";
+          display: block;
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          top: 50%;
+          left: 50%;
+          border-radius: 50%;
+          border: 3px solid #086ad8;
+          animation-delay: 0s;
+        }
+      }
+    }
+  }
+  .video-button_two {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .video-text {
+    margin-top: 0;
+    margin-left: 59px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.45;
+  }
+  .video-play {
+    width: 78px;
+    height: 78px;
+    background: #086ad8;
+    -webkit-box-shadow: 0 2px 41px 0 rgb(91 99 254 / 36%);
+    box-shadow: 0 2px 41px 0 rgb(91 99 254 / 36%);
+    border-radius: 50%;
+    -webkit-transition: all 1s cubic-bezier(0, 0, 0.2, 1) !important;
+    -o-transition: all 1s cubic-bezier(0, 0, 0.2, 1) !important;
+    transition: all 1s cubic-bezier(0, 0, 0.2, 1) !important;
+    -webkit-box-shadow: 0 20px 30px rgb(0 0 0 / 7%);
+    box-shadow: 0 20px 30px rgb(0 0 0 / 7%);
+    .video-play-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      line-height: 1;
+      margin-left: 1px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border-top: 11px solid transparent;
+        border-bottom: 11px solid transparent;
+        border-left: 17px solid #fff;
+        border-top-width: 12px;
+        border-bottom-width: 12px;
+        border-left-width: 19px;
+        border-left-color: #ffffff;
+      } 
+    }
+  }
+}
+.video-link:hover .video-play{
+  text-decoration: none;
+    color: #086AD8;
+}
+@-webkit-keyframes zoomBig {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+    border-width: 3px;
+  }
+  40% {
+    opacity: .5;
+    border-width: 2px;
+  }
+  65% {
+    border-width: 1px;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    border-width: 1px;
+  }
+}
+
+@keyframes zoomBig {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+    border-width: 3px;
+  }
+  40% {
+    opacity: .5;
+    border-width: 2px;
+  }
+  65% {
+    border-width: 1px;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    border-width: 1px;
+  }
+}
+
+@keyframes zoomBig {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+    border-width: 3px;
+  }
+  40% {
+    opacity: .5;
+    border-width: 2px;
+  }
+  65% {
+    border-width: 1px;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    border-width: 1px;
+  }
+}
+
+/* Video wrapper CSS end */
